@@ -10,9 +10,10 @@ class BookCreator extends Component {
     }
 
     handleChange = (event) => {
+        console.log(this.state)
         console.log(event.target.value)
         this.setState({
-            [event.target.title]: event.target.value
+            [event.target.name]: event.target.value
         });
     }
 
